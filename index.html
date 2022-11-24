@@ -5,13 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>Mine's Sweeper!</title>
   </head>
   <body onload="initGame()">
     <h1>Mine's Sweeper!</h1>
 
+    <button onclick="changeLevel('easy')">Easy</button>
+    <button onclick="changeLevel('medium')">Medium</button>
+    <button onclick="changeLevel('hard')">Hard</button>
+    <br />
+    <div class="bombsNum"><br />Bombs to finds: <span></span></div>
+
+    <button class="emoji" onclick="initGame()"><br />😀</button>
+    <div class="lives">Life: <span></span></div>
+    <div class="time">Time: <span> 00:00</span></div>
     <div class="board-container"></div>
 
+    <footer>Created by Lior Geni</footer>
     <script src="js/util.js"></script>
     <script src="js/game.js"></script>
   </body>
