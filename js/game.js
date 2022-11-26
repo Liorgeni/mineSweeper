@@ -20,9 +20,14 @@ var bombsToFindDisplay = document.querySelector(".bombsNum span");
 var condition = document.querySelector(".emoji");
 var lifeDisplay = document.querySelector(".lives span");
 var gGame = { isOn: false, shownCount: 0, markedCount: 0, secsPassed: 0 };
+var moves = [];
+var movesIndex = 0;
 
 function initGame(level = 4, mines = 2) {
   if (gInterval) clearInterval(gInterval);
+  moves = [];
+  movesIndex = 0;
+
   gSize = level;
   gMines = mines;
   lives = 3;
@@ -33,6 +38,8 @@ function initGame(level = 4, mines = 2) {
   bombsCount = mines;
   bombsToFindDisplay.innerHTML = bombsCount;
   gBoard = buildBoard();
+  moves.push({ size: level });
+  // console.log(moves);
   renderBoard(gBoard);
 }
 
