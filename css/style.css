@@ -24,13 +24,13 @@ h1 {
   font-size: 12px;
 }
 
-.board tr {
+.cell:hover {
   cursor: pointer;
+  background-color: rgb(182, 219, 121);
 }
 
 footer {
   margin-top: 20px;
-  text-align: center;
 }
 
 .dark {
@@ -42,7 +42,6 @@ button {
   margin-top: 20px;
   padding: 8px 17px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 14px;
 }
@@ -57,11 +56,6 @@ button:hover {
 }
 
 .emoji {
-  cursor: pointer;
-  margin-top: 20px;
   padding: 8px 8px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
 }

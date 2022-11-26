@@ -24,7 +24,7 @@ function renderBoard(board) {
   }
   strHTML += "</tbody></table>";
   elBoard.innerHTML = strHTML;
-  console.table("board", gBoard);
+  // console.table("board", gBoard);
 }
 
 function renderCell(location, value) {
@@ -57,14 +57,6 @@ function findEmptyCell(board) {
     }
   }
   return currNeighbours;
-}
-function startTimer() {
-  gStartTime = Date.now();
-  gInterval = setInterval(() => {
-    const seconds = (Date.now() - gStartTime) / 1000;
-    var elTimeSpan = document.querySelector(".time span");
-    elTimeSpan.innerText = seconds.toFixed(3);
-  }, 1);
 }
 
 /////////////////////////////////////////////
