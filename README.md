@@ -32,5 +32,5 @@ The player can flag a square that they suspect contains a mine by right-clicking
 
 ## Acknowledgements
 
-This project was developed as part of my studies at Coding Acadeny Bootcamp.
+This project was developed as part of my studies at <i>Coding Academy Bootcamp</i>.
 
