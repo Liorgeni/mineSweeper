@@ -1,4 +1,4 @@
-<h1> Minesweeper Game</h1> 
+<h1>Minesweeper Game</h1> 
 This is a Minesweeper game developed in JavaScript. The objective of this project was to create an engaging game that challenges players' problem-solving skills while familiarizing myself with the intricacies of JavaScript. The game features a dynamic table built using matrix, which enable randomized mine placement.
 
 <h2>Table of Contents</h2>
